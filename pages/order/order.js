@@ -62,7 +62,13 @@ Page({
     navScrollLeft: 0
   },
   //事件处理函数
-  onLoad: function () {
+  onLoad: function (e) {
+    // 获取传递过劳的参数
+    if (e.currentTab) {
+      this.setData({
+        currentTab: e.currentTab
+      })
+    }
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -118,6 +124,7 @@ Page({
     }
   },
   switchTab(event) {
+    console.log(event);
     var cur = event.detail.current;
     var singleNavWidth = this.data.windowWidth / 5;
     this.setData({

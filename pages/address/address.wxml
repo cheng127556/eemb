@@ -15,16 +15,18 @@
                     <text>设为默认地址</text>
                 </view>
                 <view class="edtailBtnRight">
-                    <image  src="/assets/edtail.png"/>
-                    <text>编辑</text>
+                    <navigator url="/pages/edtaileaddress/edtaileaddress">
+                      <image  src="/assets/edtail.png"/>
+                      <text>编辑</text>
+                    </navigator>
                     <text bindtap="deleteaddress">删除</text>
                 </view>
             </view>
         </view>
         
     </view>
-    <view class="addAddress">
+    <navigator  url="/pages/addAddress/addAddress" class="addAddress">
         +添加收货地址
-    </view>
+    </navigator>
 
 </view>  
