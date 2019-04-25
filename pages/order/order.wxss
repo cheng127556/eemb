@@ -135,6 +135,3 @@
   height: 150rpx;
   align-items: center;
 }
-.aaa{
-  color:#333;
-}
