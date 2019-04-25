@@ -152,6 +152,6 @@ Page({
     // console.log(navData)
   },
   paybtn: function (option) {
-    console.log(option)
+    // console.log(option)
   }
 })
